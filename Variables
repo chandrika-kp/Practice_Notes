@@ -1,5 +1,31 @@
 Data is anything that is meaningful to the computer. 
 JavaScript provides different data types which are undefined, null, boolean, string, number, arrays and object.
 Variables allow computers to store and manipulate data in a dynamic fashion
+Variable names can be made up of numbers, letters, and $ or _, but may not contain spaces or start with a number.
+
 you can store a value in a variable with the assignment operator (=).
 ex : var myVar = 0
+
+    var myName = "your name";
+"your name" is called a string literal. A string literal, or string, is a series of zero or more characters enclosed in single or double quotes.
+
+var a; // a value is undefined
+a = a + 1; // mathematical operation on an undefined variable your result will be NaN which means "Not a Number".
+
+var c ; // c is undefined
+c = c + " String!"; // concatenate a string with an undefined variable, you will get a string of undefined.
+
+variables and function names are case sensitive
+MYVAR 
+MyVar 
+myvar  // all are different
+
+Mostly camelCase used . In camelCase, multi-word variable names have the first word in lowercase and the first letter of each subsequent word is capitalized.
+ ex : var properCamelCase;
+ 
+Declaring variables with the var keyword is that you can easily overwrite variable declarations:
+
+var camper = "James";
+var camper = "David";
+console.log(camper);
+In the code above, the camper variable is originally declared as James, and is then overridden to be David. The console then displays the string David.
