@@ -29,3 +29,15 @@ var camper = "James";
 var camper = "David";
 console.log(camper);
 In the code above, the camper variable is originally declared as James, and is then overridden to be David. The console then displays the string David.
+
+Keywords let , const was introduced in ES6, a major update to JavaScript
+If you replace var with let in the code above, it results in an error:
+
+let camper = "James";
+let camper = "David";
+The error can be seen in your browser console.
+
+variables declared using const are read-only. They are a constant value, which means that once a variable is assigned with const, it cannot be reassigned:
+This helps when you accidentally attempt to reassign a variable that you don't want to reassign ( meant to stay constant).
+
+Note: It is common for developers to use uppercase variable identifiers for immutable values and lowercase or camelCase for mutable values (objects and arrays).
