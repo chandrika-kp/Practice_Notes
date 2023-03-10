@@ -1,0 +1,5 @@
+Data is anything that is meaningful to the computer. 
+JavaScript provides different data types which are undefined, null, boolean, string, number, arrays and object.
+Variables allow computers to store and manipulate data in a dynamic fashion
+you can store a value in a variable with the assignment operator (=).
+ex : var myVar = 0
