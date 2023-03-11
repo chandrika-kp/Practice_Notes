@@ -1,7 +1,36 @@
 
 Escaping Literal Quotes in Strings:
+----------------------------------
 
 In JavaScript, you can escape a quote from considering it as an end of string quote by placing a backslash (\) in front of the quote.
 
 const sampleStr = "Alan said, \"Peter is learning JavaScript\".";
 output--->Alan said, "Peter is learning JavaScript"
+
+Escape Sequences in Strings
+-------------------------------
+Quotes are not the only characters that can be escaped inside a string. Escape sequences allow you to use characters you may not otherwise be able to use in a string.
+
+Code	Output
+\'	single quote
+\"	double quote
+\\	backslash
+\n	newline
+\t	tab
+\r	carriage return
+\b	word boundary
+\f	form feed
+
++ operator is used with a String value, it is called the concatenation operator
+
+Concatenating Strings with the Plus Equals Operator
+---------------------------------------------------
+let ourStr = "I come first. ";
+ourStr += "I come second.";  // I come first. I come second..
+
+
+
+Constructing Strings with Variables
+-------------------------------------
+const myName = "hello";
+const myStr = "Hi " + myName + " everyone";  //Hi hello eveyone
