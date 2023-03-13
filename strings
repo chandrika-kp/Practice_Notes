@@ -35,4 +35,11 @@ Constructing Strings with Variables
 const myName = "hello";
 const myStr = "Hi " + myName + " everyone";  //Hi hello eveyone
 
+STRING METHODS
+------------------
+
+LENGTH
+To get the length of a String value by writing .length after the string variable or string literal.
+const lastName = "Lovelace";
+console.log(lastName.length); // 8
 
