@@ -34,3 +34,5 @@ Constructing Strings with Variables
 -------------------------------------
 const myName = "hello";
 const myStr = "Hi " + myName + " everyone";  //Hi hello eveyone
+
+
