@@ -1,0 +1,61 @@
+we can store several pieces of data in one place.
+let a = ['chandu' ,50 ,'$']
+
+You can also nest arrays within other arrays, like below:
+const teams = [["Bulls", 23], ["White Sox", 45]]; //  multi-dimensional array.
+
+Like strings, arrays use zero-based indexing, so the first element in an array has an index of 0.
+We can access the data inside arrays using indexes.
+let a = ['chandu' ,50 ,'$']
+a[1] // 50
+
+Unlike strings, the entries of arrays are mutable and can be changed freely, even if the array was declared with const.
+const ourArray = [50, 40, 30];
+ourArray[0] = 15; // [15, 40, 30]
+
+multi-dimensional array, is as an array of arrays. 
+const arr = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9],
+  [[10, 11, 12], 13, 14]
+];
+
+const subarray = arr[3];           // [[10, 11, 12], 13, 14]
+const nestedSubarray = arr[3][0];  // [10, 11, 12]
+const element = arr[3][0][1];      // 11
+
+Manipulate Arrays with below methods ( we can change arrays using below methods )
+
+PUSH
+-----
+to append data to the end of an array 
+.push() takes one or more parameters
+
+const arr1 = [1, 2, 3];
+arr1.push(4); 
+console.log(arr1)  // [1, 2, 3 ,4] 
+
+UNSHIFT
+--------
+.unshift() works exactly like .push(), but instead of adding the element at the end of the array, unshift() adds the element at the beginning of the array.
+const arr1 = [1, 2, 3];
+arr1.unshift(0)  
+console.log(arr1)  // [0, 1, 2, 3 ,4] 
+
+POP
+---
+.pop() removes the last element from an array and returns that element.
+const threeArr = [1, 4, 6];
+const oneDown = threeArr.pop();  // we can assign popped off value to a variable 
+console.log(oneDown);            // 6
+console.log(threeArr);           // [1,4]
+
+SHIFT
+-----
+pop() always removes the last element of an array. What if you want to remove the first?
+That's where .shift() comes in. It works just like .pop(), except it removes the first element instead of the last.
+const ourArray = ["Stimpson", "J", ["cat"]];
+const removedFromOurArray = ourArray.shift(); //  [ "J", ["cat"]]
+
+
