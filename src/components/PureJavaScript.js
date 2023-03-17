@@ -1,6 +1,6 @@
 import React from "react";
 function PureJavaScript () {
-    let count = 5;
+//     let count = 5;
   
     return (
       
