@@ -36,26 +36,7 @@ Have a look at the result:
 
 
 App.js
-Download
-Reset
-Fork
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
+
 function MyButton() {
   return (
     <button>
@@ -125,33 +106,7 @@ You can put more complex expressions inside the JSX curly braces too, for exampl
 
 
 App.js
-Download
-Reset
 
-Fork
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
 const user = {
   name: 'Hedy Lamarr',
   imageUrl: 'https://i.imgur.com/yXOvdOSs.jpg',
@@ -235,33 +190,7 @@ Notice how <li> has a key attribute. For each item in a list, you should pass a 
 
 
 App.js
-Download
-Reset
 
-Fork
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
 const products = [
   { title: 'Cabbage', isFruit: false, id: 1 },
   { title: 'Garlic', isFruit: false, id: 2 },
@@ -337,36 +266,7 @@ If you render the same component multiple times, each will get its own state. Cl
 
 
 App.js
-Download
-Reset
 
-Fork
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
 import { useState } from 'react';
 
 export default function MyApp() {
@@ -483,36 +383,7 @@ When you click the button, the onClick handler fires. Each button’s onClick pr
 
 
 App.js
-Download
-Reset
 
-Fork
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
 import { useState } from 'react';
 
 export default function MyApp() {
