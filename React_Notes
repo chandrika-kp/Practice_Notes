@@ -413,16 +413,3 @@ function MyButton({ count, onClick }) {
 -----------------------------------------------------------------------------------
 
 https://legacy.reactjs.org/docs/components-and-props.html
-
-React component names must always start with a capital letter, while HTML tags must be lowercase.
-we can export components two ways 
-1) Default export 
------> export default ComponentName
-we came import above file with any name 
-like import anyName from './file Path'
-
-2) Named Export
-------> export {ComponentName}
-we came import above file within curlyBraces {} with same name 
-like import {ComponentName} from './file Path' 
-
