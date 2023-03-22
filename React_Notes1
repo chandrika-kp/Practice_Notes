@@ -1,0 +1,27 @@
+
+React component names must always start with a capital letter, while HTML tags must be lowercase.
+we can export components two ways 
+1) Default export 
+-----> export default ComponentName
+we came import above file with any name 
+like import anyName from './file Path'
+
+2) Named Export
+------> export {ComponentName}
+we came import above file within curlyBraces {} with same name 
+like import {ComponentName} from './file Path' 
+
+
+Props
+----------------------------
+React Props are like function arguments in JavaScript and attributes in HTML.
+props stands for properties.
+props are read only
+It allows us to pass data from one component to another component
+props are immutable--when parent component update the data that is passed as props then
+                     the child component get updated props
+props are passed as arguments to function components and accessed within components
+
+steps---->
+1) ACCESSING DATA ---- In parent component , this would be accessed as   ( props.property )  // dont forget to pass props as an argument to the function/class component
+2) PASSING DATA   ---- we are passing props as a ( property = value ) to child component.
