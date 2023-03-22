@@ -426,6 +426,3 @@ like import anyName from './file Path'
 we came import above file within curlyBraces {} with same name 
 like import {ComponentName} from './file Path' 
 
-
-
-
