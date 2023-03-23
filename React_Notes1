@@ -11,6 +11,13 @@ like import anyName from './file Path'
 we came import above file within curlyBraces {} with same name 
 like import {ComponentName} from './file Path' 
 
+------------------>
+In a real-time application ,components must deal with dynamic data
+Data could be someting internal to the component or may be passed from another component.
+To bind the data to the component ,you need two Js objects
+1) Props
+2)State
+
 
 Props
 ----------------------------
@@ -25,3 +32,9 @@ props are passed as arguments to function components and accessed within compone
 steps---->
 1) ACCESSING DATA ---- In parent component , this would be accessed as   ( props.property )  // dont forget to pass props as an argument to the function/class component
 2) PASSING DATA   ---- we are passing props as a ( property = value ) to child component.
+
+
+State
+-----------------------------
+The state is an initial value set for a component, which is used for interactivity.
+The state is the set of data that is managed by the component.
