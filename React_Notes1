@@ -1,5 +1,36 @@
-
+React is a framework for building client-side dynamic web applications.
+React uses dynamic data binding and a virtual DOM to extend HTML syntax
 React component names must always start with a capital letter, while HTML tags must be lowercase.
+In React, some of HTML elements will be rendered as a React component.
+React uses a special markup language called JavaScript XML (JSX) which resembles HTML.
+JSK
+-------------
+JSX can be compiled and interpreted as JavaScript by Babel, a special in-memory tool.
+JSX is embedded inside special script tags where the type attribute specifies the content that requires Babel.
+Packages
+------------
+Three important packages that you use to build React applications .
+1)React package : The React package holds the React source for components and their states and properties. 
+2)ReactDOM package : The ReactDOM package is the glue between React and the DOM.
+3)Babel package : Babel is the module which is available in most modern browsers.
+                   It is used to compile and interpret the JSX.
+Create React App
+--------------------
+With Create React App, you can easily create a React application.
+1)First we have to install node
+2)In comand Prompt/powershell /terminal , npx create-react-app app_Name 
+   - It creates react application with some packages & Folders
+   - In src folder : App.js   ---contains App , which is the root react component that you add into your Html page
+                   : Index.js --- is where you add the App component to the html
+3)To run React App -----npm start
+
+NOTES:
+--------------
+React is an efficient, flexible JavaScript library for building user interfaces. 
+React uses a special markup language called JSX. 
+A React application is a tree of components and an extension of the HTML DOM.
+With Create React App, you can easily create a React application.
+
 we can export components two ways 
 1) Default export 
 -----> export default ComponentName
@@ -38,3 +69,11 @@ State
 -----------------------------
 The state is an initial value set for a component, which is used for interactivity.
 The state is the set of data that is managed by the component.
+
+Hooks
+-------
+useState
+
+It cannot reload the page whenever we update data
+
+
