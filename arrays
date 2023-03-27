@@ -1,6 +1,10 @@
 we can store several pieces of data in one place.
 let a = ['chandu' ,50 ,'$']
 
+we can find index of an array element where the indexing starts from 0.
+let a = ['chandu' ,50 ,'$']
+console.log(a['chandu']) // returns 0
+
 You can also nest arrays within other arrays, like below:
 const teams = [["Bulls", 23], ["White Sox", 45]]; //  multi-dimensional array.
 
@@ -57,5 +61,10 @@ pop() always removes the last element of an array. What if you want to remove th
 That's where .shift() comes in. It works just like .pop(), except it removes the first element instead of the last.
 const ourArray = ["Stimpson", "J", ["cat"]];
 const removedFromOurArray = ourArray.shift(); //  [ "J", ["cat"]]
+
+INDEXOF
+--------------
+let myarray = ["A","b","C","d", "e"];
+console.log(myarray.indexOf("b")); // to find the index value of an element in the list // 1
 
 
