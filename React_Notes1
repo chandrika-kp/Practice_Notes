@@ -76,4 +76,38 @@ useState
 
 It cannot reload the page whenever we update data
 
-
+-----------------------------------------------------------------------------------------------
+Angular               	Angular is a platform for building mobile and desktop web applications.
+App.js	                Contains App, which is the root React component that you will add into your HTML page.
+Arrow functions	        Allow you to declare functions the same way you declare variables
+Babel                  	A special in-memory tool that compiles JSX and interprets it as JavaScript.
+Class	                  A template or blueprint for creating objects.
+Class component	        Use JavaScript ES6 classes to create class-based components in React.
+Component              	Core building blocks of React.
+const	                  Allows you to declare constants whose values cannot be changed.
+CSS	                    Cascading style sheets.
+Create React App	      Simplifies the process of creating React applications.
+DOM	                    Document object model.
+ES	                    ES is short for ECMAScript, which is a standards organization that creates a wide range of global information and communications technology standards.
+ES6	                    JavaScript adheres to ECMA's specification EcmaScript6.
+ECMAScript            	A standard used for client-side scripting.
+event	                  Enable the component to manage document object model (DOM) actions as a result of user interaction on the system.
+Front-end frameworks	  Are used to create a dynamic client that can connect to the server.
+Functional component	  Created by writing a JavaScript function.
+High-order component	  Are used to share logic with other components
+HTML	                  Hypertext markup language.
+index.js	              Where you will add App to the HTML.
+JSX	                    JavaScript XML which resembles HTML.
+let	                    Allows you to restrict the scope of variables within the block where they were declared.
+Local scope           	Is the limited scope.
+Promise	                Represents the eventual completion of an asynchronous operation and its return value.
+Props	                  Used to pass data from a parent component to a child component.
+Pure component	        Do not depend on or modify the state of variables. Outside their scope
+ReactDOM package	      This is the glue between React and the DOM.
+React package	          Holds the React source for components and their states and properties.
+React elements        	Used to render the component to DOM.
+src folder	            The main folder in which you will make changes.
+state	                  An object that describes how the component will behave and render currently.
+subclass	              The class that is inheriting one other class.
+superclass	            The class being inherited by the subclass.
+this	                  Keyword that refers to the current object.
