@@ -111,3 +111,111 @@ state	                  An object that describes how the component will behave a
 subclass	              The class that is inheriting one other class.
 superclass	            The class being inherited by the subclass.
 this	                  Keyword that refers to the current object.
+---------------------------------------------------------------------------------------
+
+let    ----	let allows you to restrict the scope of variables within the block where they are declared. 
+const  ---- const allows you to declare constants whose values cannot be changed.	
+
+{
+    let a = 10
+    console.log(a)
+    a = 15
+    console.log(a)
+}
+console.log(a)
+const num = 5
+console.log(num)
+num = 8
+console.log(num)
+---------------------------------------------------------------------------------------------
+Arrow function	-----Arrow functions allow you to write shorter function syntax.	
+
+hello = () =>
+{
+    return "Hello World!";
+}
+---------------------------------------------------------------------------------------------
+Promises	---------The Promise object represents the eventual completion (or failure) of an asynchronous operation and its resulting value.	
+
+let promiseArgument = (resolve, reject) =>
+    setTimeout (() => {
+    let currTime = new Date().getTime();
+    if(currTime % 2 === 0){
+    resolve(“Success”)
+    }else{
+    Reject(“Failed!!!”)}
+    }
+    ,2000)
+    }
+    Let myPromise = new Promise(promiseArgument);
+---------------------------------------------------------------------------------------------
+class	--Class is a template or blueprint for creating object.	
+
+function car(name,year)
+{
+    this.name = name
+    this.year = year
+    return this;
+}
+Let car = car("Ford", 2014)
+console.log(car)
+console.log(car.name)
+console.log(car.year)
+---------------------------------------------------------------------------------------------
+Inheritence	A class created with a class inheritance, inherits all the methods from another class.	
+
+class Square extends Rectangle 
+{
+    constructor(height,width)
+    {
+        if(height === width) 
+        {
+            super(height,width)
+        }
+        else
+        {
+        Super(width,width)
+        }
+    }
+}
+Let mySquare = new Square(5,5)
+---------------------------------------------------------------------------------------------
+React components	----------Components are reusable segments of code that come under the class and functional component types.	
+
+importReact from 'react';
+import {Text} from 'react-native’;
+constHelloworld= ()=>
+{
+    return
+    (Hello, World!);
+}
+exportdefault Helloworld;
+---------------------------------------------------------------------------------------------
+React class Component-----------	React class component contains- Props: set from outside the class 
+                                                                  State: internal to the class	
+
+import React from "react";
+class App extends React.Component {
+constructor(props) {
+super(props);
+this.state={change: true };
+}
+render() {
+return(
+<buttononClick={()=>{this.setState({change: !this.state.change});}}>Click Here!</button>
+{this.state.change?(Hello!!):(Welcome to the React Course)}
+);}}
+export default App;
+---------------------------------------------------------------------------------------------
+onClick---	When an event fires, event handlers decide what should happen next. This could involve pressing a button or altering a text entry.	
+
+function changeColor() {
+const shoot = () => {
+    alert("Color Changed!");
+}
+return (
+<button onClick={change}>Change the Color! </button>
+);
+}
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<changeColor />);
