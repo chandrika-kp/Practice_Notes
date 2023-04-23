@@ -219,3 +219,11 @@ return (
 }
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<changeColor />);
+
+
+
+       JSON Server is a node package manager(to create fake server) that helps you to setup a REST API with CRUD operations very fast.
+    (REST APIs communicate via HTTP requests to perform standard database functions 
+    like creating, reading, updating, and deleting records within a resource.)
+    JSON Server will take JSON file and turn it into a RESTful database with all the right routes.
+      Aixos is a popular libray used to communicate with the backend.It is used to make API requests.
