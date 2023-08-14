@@ -227,3 +227,10 @@ root.render(<changeColor />);
     like creating, reading, updating, and deleting records within a resource.)
     JSON Server will take JSON file and turn it into a RESTful database with all the right routes.
       Aixos is a popular libray used to communicate with the backend.It is used to make API requests.
+
+
+
+
+React_Redux  
+............
+A predictable state for javascript apps
