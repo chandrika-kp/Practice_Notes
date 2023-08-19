@@ -153,4 +153,7 @@ DOM-Document Object Model is inherited by the HTML page structure
 50. **How does content security policy (CSP) enhance web security?**
     CSP is a security feature that helps prevent cross-site scripting (XSS) attacks by specifying which sources of content are considered valid for a web page.
 
-Remember, these answers are meant to provide a quick overview. For more in-depth understanding and preparation, it's recommended to delve deeper into each topic and practice coding exercises and projects.
+q)How would you rate yourself?
+Q)DataTypes?
+Q)is js strict type or nonstrict?
+
