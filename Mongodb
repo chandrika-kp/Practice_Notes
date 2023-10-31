@@ -35,7 +35,7 @@ MongoDB Database
 |
 |----- ...
 
--------------------------------------
+-----------------------------------------------------------------------------------
 After installation...
 In terminal or in vs code terminal
 
@@ -49,3 +49,87 @@ Current Mongosh Log ID: 653a82188cedc5ae6b7ed53f
 Connecting to:          mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.0.1  
 Using MongoDB:          7.0.2
 Using Mongosh:          2.0.1
+
+
+--------------------------------------------------------------------------------------
+1)To see all available databases, in your terminal type 
+  .........show dbs
+
+2)You can change or create a new database by typing 'use' then the name of the database.
+here we created new database with name 'newdatabase'
+
+test> use newdatabase
+switched to db newdatabase
+
+3)You can create a collection using the createCollection() database method.
+here we created new collection with name 'firstCollection'
+newdatabase> db.createCollection("firstCollection")   
+{ ok: 1 }
+
+4)now we are creating documents
+   a)To insert a single document, use the insertOne() method.
+
+newdatabase> db.firstCollection.insertOne({
+... name:"chandu",
+... })
+{
+  acknowledged: true,
+  insertedId: ObjectId("6541115c9fcc5e93a4fcf1ac")  
+}
+
+   b)To insert multiple documents at once, use the insertMany() method.
+This method inserts an array of objects into the database.
+
+
+newdatabase> db.firstCollection.insertMany([{ name:"SreeRam"},{name:"Ganesh"}])
+//  {
+//     acknowledged: true,
+//     insertedIds: { 
+//     { _id: ObjectId("654111d09fcc5e93a4fcf1ad"), name: 'SreeRam' },
+//     { _id: ObjectId("6541115c9fcc5e93a4fcf1ae"), name: 'Ganesh' }
+//   }
+
+
+newdatabase> db.firstCollection.insertMany([ { name: "laxmi"},{name:"Venky"}])
+//  {
+//     acknowledged: true,
+//     insertedIds: {
+//   { _id: ObjectId("6541115c9fcc5e93a4fcf1ac"), name: 'chandu' },
+//   { _id: ObjectId("654111d09fcc5e93a4fcf1ad"), name: 'SreeRam' },
+//   { _id: ObjectId("6541115c9fcc5e93a4fcf1ae"), name: 'Ganesh' },
+//   { _id: ObjectId("654112099fcc5e93a4fcf1ae"), name: 'laxmi' },
+//   { _id: ObjectId("654112099fcc5e93a4fcf1af"), name: 'Venky' }
+// }
+
+
+5)Find Data
+There are 2 methods to find and select data from a MongoDB collection, find() and findOne().
+
+a)find()
+To select data from a collection in MongoDB, we can use the find() method.
+This method accepts a query object. If left empty, all documents will be returned.
+
+
+newdatabase> db.firstCollection.find()
+
+[
+  { _id: ObjectId("6541115c9fcc5e93a4fcf1ac"), name: 'chandu' },
+  { _id: ObjectId("654111d09fcc5e93a4fcf1ad"), name: 'SreeRam' },
+  { _id: ObjectId("6541115c9fcc5e93a4fcf1ae"), name: 'Ganesh' },
+  { _id: ObjectId("654112099fcc5e93a4fcf1af"), name: 'laxmi' },
+  { _id: ObjectId("654112099fcc5e93a4fcf1ag"), name: 'Venky' }
+]
+
+b)findOne()
+To select only one document, we can use the findOne() method.
+This method accepts a query object. If left empty, it will return the first document it finds.
+
+newdatabase> db.firstCollection.findOne()
+
+{ _id: ObjectId("6541115c9fcc5e93a4fcf1ac"), name: 'chandu' }
+
+c)To query, or filter, data we can include a query in our find() or findOne() methods.
+
+newdatabase> db.firstCollection.findOne({name:"laxmi"})
+
+{ _id: ObjectId("654112099fcc5e93a4fcf1ae"), name:'laxmi' }
