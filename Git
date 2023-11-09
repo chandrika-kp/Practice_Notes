@@ -6,8 +6,26 @@ git pull origin main
 
 git push origin main
 
-*) Eventhough some changes happen in our application ,sometimes it won't updated in git repository
+
+------------------------------------------------------------------------------------------
+open your git repo to clone ( https://xxxx/repoName.git )
+
+' git clone " https://xxxx/repoName.git" '
+
+checkout to the required branch - default branch is master
+
+move into the cloned git repo (repoName)
+
+cd repoName
+
+To stage / add all the changes to git git add . git add filename
+To commit the staged / added changes git commit -m "custom message" 
+To push the commit to remote( cloud ) git push 
+
 --------------------------------------------------------------------------------------------------
+
+*) Eventhough some changes happen in our application ,sometimes it won't updated in git repository
+
 in that case ,First we have to remove that folder and again add that same folder
 
 git rm FOLDERNAME
