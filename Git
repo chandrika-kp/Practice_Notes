@@ -1,0 +1,43 @@
+git add .
+
+git commit -m "message"
+
+git pull origin main
+
+git push origin main
+
+*) Eventhough some changes happen in our application ,sometimes it won't updated in git repository
+--------------------------------------------------------------------------------------------------
+in that case ,First we have to remove that folder and again add that same folder
+
+git rm FOLDERNAME
+
+then
+
+git add FOLDERNAME
+
+
+*)GitHub Arrow on Folder Can't Open
+-------------------------------------
+
+Git keeps all of its files in the .git directory.
+we have to delete all git files.....sometimes those are hidden
+in that case ,we have to delete node modules folder(bcz having git files)
+
+After deleting files also ......sometimes it won't open 
+in that case,we have to remove cached files
+
+ git rm --cached FILENAME/FOLDERNAME
+
+ It removes entries from the cache (and even then they may only be marked "removed", internally
+
+
+ *)Git Remove Remote
+ -----------------------------------------------------------------------------------------------
+ The git remote remove command removes a remote from a local repository.
+ 
+ git remote rm <remote-url>.
+
+ If you remove a remote accidentally, you will need to add it back manually using
+
+ git remote add origin <url>.
